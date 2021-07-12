@@ -284,9 +284,9 @@
                 let img=imgs[i]
                 img.addEventListener("click",function(){
                     $('html').scrollTop(0);
-                    $("#main").animate({ opacity: 0 }, 500, function(){
+                    $("#main").hide(400, function(){
                         $("#main").attr(`src`, `image/kuchnia/${i+1}.jpg`);
-                        $("#main").animate({ opacity: 1}, 500);
+                        $("#main").show(400);
                     });
                 })
             }
