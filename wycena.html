@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/f5b844ce77.js" crossorigin="anonymous"></script>
+        <script src="javascript/kalkulator.js"></script>
+        <link rel="stylesheet" href="style/styl.css">
+        <link rel="stylesheet" href="style/wycena.css">
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <div class="header-navbar">
+                <div class="header-navbar-container">
+                    <div class="header-navbar-row">
+                        <div class="header-navbar-left">
+                            <ul>
+                                <li><i class="far fa-clock"></i> Poniedziałek - Piatęk: 9.00 - 17.00</li>
+                                <li> Sobota: 9.00 - 13.00</li>
+                            </ul>
+                        </div>
+                        <div class="header-navbar-right">
+                            <a href="tel:+32 455 88 69">Tel.: 32 455 88 69</a>
+                            <a href="tel:+602 610 557">Tel. Kom.: 602 6120 557</a>
+                            <a href="mailto:GlassDruk@gmail.com">GlassDruk@gmail.com</a>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="nav-wrapper">
+                <nav class="navbar">
+                    <a href="strona_glowna.html"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Bluestar_%28bus_company%29_logo.svg/1280px-Bluestar_%28bus_company%29_logo.svg.png" alt="Company Logo"></a>
+                    <div class="menu-toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="nav no-search">
+                        <li class="nav-item"><a href="strona_glowna.html"><i class="fas fa-home"></i> Strona Główna</a></li>
+                        <li class="nav-item"><a href="onas.html"><i class="fas fa-user-friends"></i> O nas</a></li>
+                        <li class="nav-item"><a href="wycena.html"><i class="fas fa-calculator"></i> Wycena</a></li>
+                        <li class="nav-item"><a href="portfolio.html"><i class="fas fa-mail-bulk"></i> Portfolio</a></li>
+                        <li class="nav-item"><a href="kontakt.html"><i class="fas fa-phone-alt"></i> Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="kalkulator">
+                <div class="kalkulator_images">
+                    <label for="opt1" class="radio">
+                      <img id="figura1" class="obrazki" src="image/ksztalt1.png"></br>
+                      <input type="radio" id="opt1" name="rdo" onclick="pokaz_zdjecie()" checked/>
+                      <span class="label"></span>
+                    </label>
+                    </br>
+                    <label for="opt2" class="radio">
+                      <img class="obrazki" src="image/ksztalt2.png"></br>
+                      <input type="radio" id="opt2" name="rdo" onclick="pokaz_zdjecie()"/>
+                      <span class="label"></span>
+                    </label>
+                    </br>
+                    <label for="opt3" class="radio">
+                      <img class="obrazki" src="image/ksztalt3.png"></br>
+                      <input type="radio" id="opt3" name="rdo" onclick="pokaz_zdjecie()"/>
+                      <span class="label"></span>
+                    </label>
+                    </br></br>
+                    <label for="opt4" class="radio">
+                      <img class="obrazki" src="image/ksztalt4.png"></br>
+                      <input type="radio" id="opt4" name="rdo" onclick="pokaz_zdjecie()"/>
+                      <span class="label"></span>
+                    </label>
+                    </br>
+                    <label for="opt5" class="radio">
+                      <img class="obrazki" src="image/ksztalt5.png"></br>
+                      <input type="radio" id="opt5" name="rdo" onclick="pokaz_zdjecie()"/>
+                      <span class="label"></span>
+                    </label>
+                    </br>
+                    <label for="opt6" class="radio">
+                      <img class="obrazki" src="image/ksztalt6.png"></br>
+                      <input type="radio" id="opt6" name="rdo" onclick="pokaz_zdjecie()"/>
+                      <span class="label"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="kalkulator_opcje">
+                <div class="kalkulator_opcje_boki">
+                    <span id="tekst_bok1">Bok 1: <input id="kalk_bok1" type="number" class="kalkulator_bok" min=0 max=400 value=0></span>
+                    <span id="tekst_bok2">Bok 2: <input id="kalk_bok2" type="number" class="kalkulator_bok" min=0 max=400 value=0></span>
+                    <span id="tekst_bok3">Bok 3: <input id="kalk_bok3" type="number" class="kalkulator_bok" min=0 max=400 value=0></span>
+                    <span id="tekst_bok4">Bok 4: <input id="kalk_bok4" type="number" class="kalkulator_bok" min=0 max=400 value=0></span>
+                    <span id="tekst_bok5">Bok 5: <input id="kalk_bok5" type="number" class="kalkulator_bok" min=0 max=400 value=0></span>
+                    <span id="tekst_bok6">Bok 6: <input id="kalk_bok6" type="number" class="kalkulator_bok" min=0 max=400 value=0></span>
+                    <span id="tekst_bok7">Bok 7: <input id="kalk_bok7" type="number" class="kalkulator_bok" min=0 max=400 value=0></span>
+                    <span id="tekst_bok8">Bok 8: <input id="kalk_bok8" type="number" class="kalkulator_bok" min=0 max=400 value=0></span>
+                </div></br></br></br>
+                <div class="kalkulator_opcje_wybory">
+                    <span>Rodzaj:
+                        <select id="rodzaj_grafika" name="Rodzaj">
+                            <option value="1">LACOBEL</option>
+                            <option value="2">LACOBEL FABRYCZNY</option>
+                            <option value="3">GRAFIKA</option>
+                        </select>
+                    </span></br>
+                    <span>Rodzaj szkła:
+                        <select id="rodzaj_szkla" name="Rodzaj szkła">
+                            <option value="1">Szkło Zwykłe</option>
+                            <option value="2">Szkło Optiwhite</option>
+                        </select>
+                    </span></br>
+                    <span>Hartowanie:
+                        <select id="rodzaj_hart" name="Hartowanie">
+                            <option value="1">Tak</option>
+                            <option value="2">Nie</option>
+                        </select>
+                    </span></br>
+                    <span>Ilosc Gniazdek:
+                        <input id="liczba_gniazdek" type="number" required>
+                    </span>
+
+                </div>
+            </div>
+            <input type="button" id="oblicz" onclick="oblicz()" value="Oblicz">
+
+            <div id="figura_pokaz">
+                <img id="zdjecie_srodek" src="image/ksztalt1.png">
+            </div>
+            
+            </br>
+        
+            <div class="wynik_koncowy">
+                <p>Tutaj te wielkości będą przyczepione do rysunku</p>
+                <span id="bok1">0 cm</span>
+                <span id="bok2">0 cm</span>
+                <span id="bok3">0 cm</span>
+                <span id="bok4">0 cm</span>
+                <span id="bok5">0 cm</span>
+                <span id="bok6">0 cm</span>
+                <span id="bok7">0 cm</span>
+                <span id="bok8">0 cm</span></br>
+                <input type="button" id="drukuj" onclick="drukuj()" value="PDF"></br></br>
+                <span id="metry_kwadratowe">Metry kwadratowe: </span></br>
+                <span id="metry_biezace_szyby">Metry bieżące Szyby: </span></br>
+                <span id="metry_biezace_wyciecia">Metry bieżące Wyciecia: </span></br>
+                <span id="koszt">Koszt: </span>
+            </div>
+        </div>
+        </br>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Główne</h4>
+                        <ul>
+                            <li><a href="strona_glowna.html">Strona Główna</a></li>
+                            <li><a href="onas.html">O nas</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Kontakt</h4>
+                        <ul>
+                            <li><a id="kontakt1" href="#">Pszów 44-370, ul. Drzymały 5</a></li>
+                            <li><a id="kontakt2" href="#">Tel. Kom.: 602 610 557</a></li>
+                            <li><a id="kontakt3" href="#">Tel.: 32 455 88 69</a></li>
+                            <li><a id="kontakt4" href="#">E-Mail: GlassDruk@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>GlassDruk</h4>
+                        <ul>
+                            <li class="footer-info">Nasza firma głównie specjalizuje się w produkcji każdego 
+                            rodzaju bezpiecznych szklanych grafik z trwałym wydrukiem UV i nie tylko.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </br></br></br>
+            <div class="footer-social">
+                <div class="social-links">
+                    <a href="strona_glowna.html"><i class="fas fa-home"></i></a>
+                    <a href="onas.html"><i class="fas fa-user-friends"></i></a>
+                    <a href="wycena.html"><i class="fas fa-calculator"></i></a>
+                    <a href="portfolio.html"><i class="fas fa-mail-bulk"></i></a>
+                    <a href="kontakt.html"><i class="fas fa-phone-alt"></i></a>
+                </div>
+            </div>
+            <p class="footer-copyright">GlassDruk © 2021</br></br>Wykonanie xTechCode.pl</p>
+        </footer>
+        <script>
+            $('.menu-toggle').click(function(){
+                $(".nav").toggleClass("mobile-nav");
+                $(this).toggleClass("is-active");
+                $('.header-navbar').slideToggle();
+            });
+            $('#tab1').click(function(){
+                $('.tab-content').animate({'opacity': 0}, 600, function(){
+                    $('.tab-content').html('<h2>Co robią dzieci w kominie Mikołaja?</h2><p>Dzieci w kominie Mikołaja są palone jak nie wiem co ale tutaj jest odpowiedź na pytanko.</p><h2>Jakie atrakcje zapewniacie?</h2><p>Napierdalamy wszystkich po kolei jak leci, aby rozpierdolić każdego.</p><h2>Czy można dostać prezent?</h2><p>Owszem, lecz trzeba się postarać oraz, gdy firma będzie w niebezpieczeństwie zostanie wezwany Terminator, który poskłada każdego.</p>').animate({'opacity': 1}, 600);
+                });
+            });
+            $('#tab2').click(function(){
+                $('.tab-content').animate({'opacity': 0}, 600, function(){
+                    $('.tab-content').html('<h2>W jakiej walucie mogę zapłacić?</h2><p>Przyjmujemy wszystkie waluty nawet w Bitcoinach oraz inne shity, których i tak później nie sprzedamy xD</p><h2>Czy mogę zniszczyć płatności u was na stronie?</h2><p>Spróbuj szczęścia, a nawet jeśli Ci się uda poniesiesz koszta finansowe wynoszące 1 000 000 dolarów europejskich.</p><h2>Czy można was oszukać?</h2><p>Nie, nie możesz, a gdy spotkamy się z próbą oszustwa to my Cię oszukamy.</p>').animate({'opacity': 1}, 600);
+                });
+            });
+            $('#tab3').click(function(){
+                $('.tab-content').animate({'opacity': 0}, 600, function(){
+                    $('.tab-content').html('<h2>Co robią dzieci w kominie Mikołaja?</h2><p>Dzieci w kominie Mikołaja są palone jak nie wiem co ale tutaj jest odpowiedź na pytanko :D</p>').animate({'opacity': 1}, 600);
+                });
+            });
+            $('#tab4').click(function(){
+                $('.tab-content').animate({'opacity': 0}, 600, function(){
+                    $('.tab-content').html('<h2>Co robią dzieci w kominie Mikołaja?</h2><p>Dzieci w kominie Mikołaja </p>').animate({'opacity': 1}, 600);
+                });
+            });
+
+        </script>
+    </body>
+</html>
