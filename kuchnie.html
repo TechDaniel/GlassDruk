@@ -306,11 +306,10 @@
                 let img=imgs[i]
                 img.addEventListener("click",function(){
                     $('html').scrollTop(0);
-                    $("#main").animate({ opacity: 0 }, 500);
-                    setTimeout(function(){
+                    $("#main").hide(500, function(){
                         $("#main").attr(`src`, `image/kuchnia/${i+1}.jpg`);
-                    }, 400);
-                    $("#main").animate({ opacity: 1}, 500);
+                    });
+                    $("#main").show(500);
                 })
             }
 
