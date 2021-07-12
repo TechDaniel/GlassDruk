@@ -5,13 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/f5b844ce77.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
         <link rel="stylesheet" href="style/styl.css">
         <link rel="stylesheet" href="style/balustrady.css">
     </head>
     <body>
+        <!-- Messenger Wtyczka czatu Code -->
         <div id="fb-root"></div>
-        <div id="fb-customer-chat" class="fb-customerchat"></div>
+        <!-- Your Wtyczka czatu code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+        <script>
+          var chatbox = document.getElementById('fb-customer-chat');
+          chatbox.setAttribute("page_id", "101346548892366");
+          chatbox.setAttribute("attribution", "install_email");
+          chatbox.setAttribute("attribution_version", "biz_inbox");
+          window.fbAsyncInit = function() {
+            FB.init({
+              xfbml            : true,
+              version          : 'v11.0'
+            });
+          };
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        </script>
         <div class="page-wrapper">
             <div class="header-navbar">
                 <div class="header-navbar-container">

@@ -11,15 +11,20 @@
     <body>
         <!-- Messenger Wtyczka czatu Code -->
         <div id="fb-root"></div>
-        <script id="facebook-jssdk" src="https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js"></script>
+        <!-- Your Wtyczka czatu code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
         <script>
+          var chatbox = document.getElementById('fb-customer-chat');
+          chatbox.setAttribute("page_id", "101346548892366");
+          chatbox.setAttribute("attribution", "install_email");
+          chatbox.setAttribute("attribution_version", "biz_inbox");
           window.fbAsyncInit = function() {
             FB.init({
               xfbml            : true,
-              version          : 'v10.0'
+              version          : 'v11.0'
             });
           };
-
           (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
@@ -28,11 +33,6 @@
             fjs.parentNode.insertBefore(js, fjs);
           }(document, 'script', 'facebook-jssdk'));
         </script>
-        <!-- Your Wtyczka czatu code -->
-        <div class="fb-customerchat"
-          attribution="biz_inbox"
-          page_id="101346548892366">
-        </div>
         <div class="page-wrapper">
             <div class="header-navbar">
                 <div class="header-navbar-container">

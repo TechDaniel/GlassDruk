@@ -9,8 +9,31 @@
         <link rel="stylesheet" href="style/styl.css">
         <link rel="stylesheet" href="style/wycena.css">
     </head>
-
     <body>
+        <!-- Messenger Wtyczka czatu Code -->
+        <div id="fb-root"></div>
+        <!-- Your Wtyczka czatu code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+        <script>
+          var chatbox = document.getElementById('fb-customer-chat');
+          chatbox.setAttribute("page_id", "101346548892366");
+          chatbox.setAttribute("attribution", "install_email");
+          chatbox.setAttribute("attribution_version", "biz_inbox");
+          window.fbAsyncInit = function() {
+            FB.init({
+              xfbml            : true,
+              version          : 'v11.0'
+            });
+          };
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        </script>
         <div class="page-wrapper">
             <div class="header-navbar">
                 <div class="header-navbar-container">
@@ -73,17 +96,6 @@
                       <span class="label"></span>
                     </label>
                     </br>
-                    <label for="opt5" class="radio">
-                      <img class="obrazki" src="image/ksztalt5.png"></br>
-                      <input type="radio" id="opt5" name="rdo" onclick="pokaz_zdjecie()"/>
-                      <span class="label"></span>
-                    </label>
-                    </br>
-                    <label for="opt6" class="radio">
-                      <img class="obrazki" src="image/ksztalt6.png"></br>
-                      <input type="radio" id="opt6" name="rdo" onclick="pokaz_zdjecie()"/>
-                      <span class="label"></span>
-                    </label>
                 </div>
             </div>
             <div class="kalkulator_opcje">
@@ -196,27 +208,6 @@
                 $(this).toggleClass("is-active");
                 $('.header-navbar').slideToggle();
             });
-            $('#tab1').click(function(){
-                $('.tab-content').animate({'opacity': 0}, 600, function(){
-                    $('.tab-content').html('<h2>Co robią dzieci w kominie Mikołaja?</h2><p>Dzieci w kominie Mikołaja są palone jak nie wiem co ale tutaj jest odpowiedź na pytanko.</p><h2>Jakie atrakcje zapewniacie?</h2><p>Napierdalamy wszystkich po kolei jak leci, aby rozpierdolić każdego.</p><h2>Czy można dostać prezent?</h2><p>Owszem, lecz trzeba się postarać oraz, gdy firma będzie w niebezpieczeństwie zostanie wezwany Terminator, który poskłada każdego.</p>').animate({'opacity': 1}, 600);
-                });
-            });
-            $('#tab2').click(function(){
-                $('.tab-content').animate({'opacity': 0}, 600, function(){
-                    $('.tab-content').html('<h2>W jakiej walucie mogę zapłacić?</h2><p>Przyjmujemy wszystkie waluty nawet w Bitcoinach oraz inne shity, których i tak później nie sprzedamy xD</p><h2>Czy mogę zniszczyć płatności u was na stronie?</h2><p>Spróbuj szczęścia, a nawet jeśli Ci się uda poniesiesz koszta finansowe wynoszące 1 000 000 dolarów europejskich.</p><h2>Czy można was oszukać?</h2><p>Nie, nie możesz, a gdy spotkamy się z próbą oszustwa to my Cię oszukamy.</p>').animate({'opacity': 1}, 600);
-                });
-            });
-            $('#tab3').click(function(){
-                $('.tab-content').animate({'opacity': 0}, 600, function(){
-                    $('.tab-content').html('<h2>Co robią dzieci w kominie Mikołaja?</h2><p>Dzieci w kominie Mikołaja są palone jak nie wiem co ale tutaj jest odpowiedź na pytanko :D</p>').animate({'opacity': 1}, 600);
-                });
-            });
-            $('#tab4').click(function(){
-                $('.tab-content').animate({'opacity': 0}, 600, function(){
-                    $('.tab-content').html('<h2>Co robią dzieci w kominie Mikołaja?</h2><p>Dzieci w kominie Mikołaja </p>').animate({'opacity': 1}, 600);
-                });
-            });
-
         </script>
     </body>
 </html>
