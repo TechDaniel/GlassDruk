@@ -121,10 +121,10 @@
             for(let i=0;i<imgs.length;i++){
                 let img=imgs[i]
                 img.addEventListener("click",function(){
-                    $("#main").fadeOut(250, function(){
-                        main.src=`image/balustrada/${i+1}.jpg`
+                    $("#main").fadeOut(400, function(){
+                        $("#main").attr(`src`, `image/balustrada/${i+1}.jpg`);
                     });
-                    $("#main").fadeIn(250);
+                    $("#main").fadeIn(300);
                     window.scrollTo(0, 0); 
                 })
             }

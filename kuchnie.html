@@ -7,7 +7,6 @@
         <script src="https://kit.fontawesome.com/f5b844ce77.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style/styl.css">
         <link rel="stylesheet" href="style/kuchnie.css">
-        <script src="javascript/facebook.js"></script>
     </head>
     <body>
         <div id="fb-root"></div>
@@ -284,10 +283,10 @@
             for(let i=0;i<imgs.length;i++){
                 let img=imgs[i]
                 img.addEventListener("click",function(){
-                    $("#main").fadeOut(250, function(){
-                        main.src=`image/kuchnia/${i+1}.jpg`
-                        $("#main").fadeIn(250);
+                    $("#main").fadeOut(400, function(){
+                        $("#main").attr(`src`, `image/kuchnia/${i+1}.jpg`)
                     });
+                    $("#main").fadeIn(300)
                     window.scrollTo(0, 0); 
                 })
             }

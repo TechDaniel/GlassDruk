@@ -143,10 +143,10 @@
                 img.addEventListener("click",function(){
                     $("#main").removeClass("main2")
                     $("#main").addClass("main");
-                    $(".main").fadeOut(250, function(){
+                    $(".main").fadeOut(400, function(){
                         $(".main").attr("src", `image/łazienka/${i+1}.jpg`);
                     });
-                    $(".main").fadeIn(250);
+                    $(".main").fadeIn(300);
                     window.scrollTo(0, 0); 
                 })
             }

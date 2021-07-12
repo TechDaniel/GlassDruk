@@ -118,10 +118,10 @@
                 img.addEventListener("click",function(){
                     $("#main").removeClass("main2")
                     $("#main").addClass("main");
-                    $(".main").fadeOut(250, function(){
+                    $(".main").fadeOut(400, function(){
                         $(".main").attr("src", `image/inne/${i+1}.jpg`);
                     });
-                    $(".main").fadeIn(250);
+                    $(".main").fadeIn(300);
                     window.scrollTo(0, 0); 
                 })
             }
@@ -130,10 +130,11 @@
                 img.addEventListener("click",function(){
                     $("#main").removeClass("main");
                     $("#main").addClass("main2")
-                    $(".main2").fadeOut(250, function(){
+                    $(".main2").fadeOut(400, function(){
                         $(".main2").attr("src", `image/inne/${i+2}.jpg`);
                     });
-                    $(".main2").fadeIn(250);
+                    $(".main2").fadeIn(300)
+
                     window.scrollTo(0, 0); 
                 })
             }
