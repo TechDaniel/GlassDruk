@@ -311,7 +311,7 @@
                     $("#main").fadeOut('slow', function() {
 				        $(this).attr({src: `image/kuchnia/${i+1}.jpg`});
                         setTimeout(100, function(){
-				            $(this).fadeIn('fast');
+				            $("#main").fadeIn('fast');
                         });
 				    });
                     //$("#main").animate({ opacity: 0}).attr(`src`, `image/kuchnia/${i+1}.jpg`).animate({ opacity: 1});
