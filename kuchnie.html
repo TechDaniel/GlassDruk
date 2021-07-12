@@ -11,6 +11,7 @@
     <body>
         <!-- Messenger Wtyczka czatu Code -->
         <div id="fb-root"></div>
+        <script id="facebook-jssdk" src="https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js"></script>
         <script>
           window.fbAsyncInit = function() {
             FB.init({
@@ -27,7 +28,6 @@
             fjs.parentNode.insertBefore(js, fjs);
           }(document, 'script', 'facebook-jssdk'));
         </script>
-
         <!-- Your Wtyczka czatu code -->
         <div class="fb-customerchat"
           attribution="biz_inbox"
