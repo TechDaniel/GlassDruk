@@ -70,7 +70,9 @@
                 </nav>
             </div>
             </br></br>
-            <img src="image/kuchnia/1.jpg" id="main">
+            <div>
+                <img src="image/kuchnia/1.jpg" id="main">
+            </div>
             </br></br>
             <div id="thumbnails">
                 <img id="img1" style="display: none;" src="image/kuchnia-icons/1.jpg">
@@ -306,10 +308,14 @@
                 let img=imgs[i]
                 img.addEventListener("click",function(){
                     $('html').scrollTop(0);
-                    $("#main").hide(500, function(){
+                    $("#main").animate({ 
+                        opacity: 0 
+                    }, 1000, function(){
                         $("#main").attr(`src`, `image/kuchnia/${i+1}.jpg`);
                     });
-                    $("#main").show(500);
+                    $("#main").animate({ 
+                        opacity: 1 
+                    }, 1000);
                 })
             }
 
