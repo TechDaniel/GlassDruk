@@ -308,7 +308,11 @@
                 let img=imgs[i]
                 img.addEventListener("click",function(){
                     $('html').scrollTop(0);
-                    $("#main").animate({ opacity: 0}).attr(`src`, `image/kuchnia/${i+1}.jpg`).animate({ opacity: 1});
+                    $("#main").fadeOut('slow', function() {
+				        $(this).attr(`src`, `image/kuchnia/${i+1}.jpg`);
+				        $(this).fadeIn('fast');
+				    });
+                    //$("#main").animate({ opacity: 0}).attr(`src`, `image/kuchnia/${i+1}.jpg`).animate({ opacity: 1});
                 })
             }
 
