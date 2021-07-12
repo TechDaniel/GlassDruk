@@ -286,8 +286,8 @@
                 img.addEventListener("click",function(){
                     $("#main").fadeOut(250, function(){
                         main.src=`image/kuchnia/${i+1}.jpg`
+                        $("#main").fadeIn(250);
                     });
-                    $("#main").fadeIn(250);
                     window.scrollTo(0, 0); 
                 })
             }
