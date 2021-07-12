@@ -9,8 +9,30 @@
         <link rel="stylesheet" href="style/kuchnie.css">
     </head>
     <body>
+        <!-- Messenger Wtyczka czatu Code -->
         <div id="fb-root"></div>
-        <div id="fb-customer-chat" class="fb-customerchat"></div>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              xfbml            : true,
+              version          : 'v10.0'
+            });
+          };
+
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <!-- Your Wtyczka czatu code -->
+        <div class="fb-customerchat"
+          attribution="biz_inbox"
+          page_id="101346548892366">
+        </div>
         <div class="page-wrapper">
             <div class="header-navbar">
                 <div class="header-navbar-container">
