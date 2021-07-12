@@ -1,0 +1,135 @@
+  /*.naglowki_wymiarow{
+    font-size: 20px;
+  }
+  .naglowek_kalk{
+    margin-left: 2.5%;
+  }
+  .kalkulator_rodzaj{
+    margin-left: 3%;
+    margin-bottom: 3%;
+    background: #2c3e50;
+    color: #fff;
+  }
+  .kalkulator_hartowanie{
+    margin-left: 5%;
+    background: #2c3e50;
+    color: #fff;
+  }
+  .kalkulator_gniazdka{
+    margin-left: 5%;
+    margin-bottom: 3%;
+    background: #2c3e50;
+    color: #fff;
+  }
+  .kalkulator_boki{
+    display: inline-block;
+    position: relative;
+    width: 70px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    background: #2c3e50;
+    padding: 5px 10px;
+    margin-left: 10px;
+    margin-top: 3%;
+  
+  }
+*/
+
+
+  .obrazki{
+    padding: 3%;
+    width: 250px;
+    height: 125px;
+    border: 3px solid rgb(98, 0, 255);
+    margin-right: 15px;
+  }
+  #figura_pokaz{
+    margin-top: 2%;
+    margin-left: 12.5%;
+    width: 25%;
+    height: 25%;
+    background-color: whitesmoke;
+    border: 3px solid black;
+  }
+  #zdjecie_srodek{
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+  
+  .wynik_koncowy{
+    margin-left: 20%;
+  }
+
+
+  .kalkulator {
+    text-align: center;
+    background: #eeeeee;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin-bottom: 1%;
+  }
+  .kalkulator_images {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+
+
+  .kalkulator_opcje {
+    display: flex;
+    flex-flow: wrap;
+  }
+  .kalkulator_opcje_boki {
+    display: flex;
+    flex-flow: column wrap;
+    height: 250px;
+    width: 400px;
+    margin-left: 3%;
+  }
+  .kalkulator_bok{
+    width: 75px;
+    color: #fff;
+    line-height: 20px;
+    border: none;
+    border-radius: 3px;
+    background: #2c3e50;
+    padding: 5px 10px;
+    margin: 3%;
+  }
+
+
+  
+  .kalkulator_opcje_wybory {
+    display: flex;
+    flex-flow: column wrap;
+    height: 250px;
+    width: 400px;
+    margin-left: 3%;
+  }
+  .kalkulator_opcje_wybory select{
+    width: 200px;
+    height: 30px;
+    background: #2c3e50;
+    color: #fff;
+    border: none;
+  }
+  .kalkulator_opcje_wybory input{
+    width: 180px;
+    height: 20px;
+    padding: 5px 10px;
+    background: #2c3e50;
+    color: #fff;
+    border: none;
+  }
+  #oblicz {
+    width: 180px;
+    height: 20px;
+    background: #4c7296;
+    border: none;
+  }

@@ -1,0 +1,96 @@
+.kontakt-info {
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+.kontakt-formularz input{
+    background-color:#edeef2;
+    height: 50px;
+    width: 430px;
+    border: 0px solid;
+    border-radius: 7px;
+    margin-left: 2%;
+    padding-left: 15px;
+}
+#submit{
+	background-color:rgb(255, 87, 87);
+	color:white;
+	height: 58px;
+	width: 450px;
+}
+#message{
+    background-color:#edeef2;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    margin-left: 2%;
+    text-align: left;
+    border: 0px solid;
+    border-radius: 7px;
+    height: 210px;
+    width: 415px;
+    resize: none;
+}
+textarea:focus {
+    outline: none;
+}
+
+.columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background: #f6f7fb;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.column {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+}
+@media screen and (max-width: 1200px) {
+  .columns .column {
+    margin-bottom: 5px;
+    flex-basis: 40%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 899px){
+  .columns .column {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .kontakt-formularz input{
+    background-color:#edeef2;
+    width: 300px;
+  }
+  .column {
+    padding-left: 5%;
+  }
+  #submit {
+  	width: 315px;
+  }
+  #message {
+    width: 285px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .kontakt-formularz input{
+    background-color:#edeef2;
+    width: 90%;
+  }
+  .column {
+    padding-left: 5%;
+    font-size: 15px;
+  }
+  #submit {
+  	width: 94.2%;
+  }
+  #message {
+    width: 84.7%;
+  }
+}
+

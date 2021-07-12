@@ -1,0 +1,177 @@
+.faq-nav {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.faq-nav h1 {
+    font-size: 2.5rem;
+    padding-top: 1%;
+}
+.faq-nav p {
+    font-size: 1.3rem;
+    color: #6c757d;
+    padding-top: 0.5%;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.faq-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background: #f6f7fb;
+    padding-bottom: 5%;
+}
+
+.tab-wrap {
+    transition: 0.3s box-shadow ease;
+    border-radius: 6px;
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    list-style: none;
+    background-color: #fff;
+    margin: 50px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.tab-wrap:hover {
+    box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
+}
+.tab {
+    display: none;
+}
+.tab:first-of-type:not(:last-of-type) + label {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.tab:not(:first-of-type):not(:last-of-type) + label {
+    border-radius: 0;
+}
+.tab:last-of-type:not(:first-of-type) + label {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.tab:checked + label {
+    background-color: #d4d4d4;
+    box-shadow: 0 0 0 #fff inset;
+}
+.tab:checked + label:hover {
+    box-shadow: 0 0 0 #fff inset;
+    background-color: #e4e4e4;
+}
+.tab + label {
+    box-shadow: 0 -1px 0 #eee inset;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    flex-grow: 3;
+    text-align: center;
+    background-color: #f2f2f2;
+    user-select: none;
+    text-align: center;
+    transition: 0.3s background-color ease, 0.3s box-shadow ease;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.tab + label:hover {
+    background-color: #e4e4e4;;
+    box-shadow: 0 0 0 #f4f4f4 inset;
+}
+.tab-content {
+    padding-top: 20px;
+    padding-left: 20px;
+    border-radius: 6px;
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+}
+.tab-content p {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    font-size: 1.05rem;
+    color: #5a5a5a;
+}
+@media only screen and (max-width: 770px) { 
+    .faq-nav p {
+        width: 450px;
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width: 500px) { 
+    .faq-nav p {
+        width: 250px;
+        font-size: 0.8rem;
+    }
+
+}
+
+.boxes {
+    display: flex;
+    width: calc(100% - 20px);
+    padding-top: 30px;
+    padding-bottom: 25px;
+    max-width: 1260px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .boxes {
+        padding: 20px;
+        padding-right: 0;
+   }
+}
+.boxes .box {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    margin: 0 20px 20px 0;
+    width: 400px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.image i {
+    cursor: pointer;
+}
+.image {
+    background-color: #ebebeb;
+    padding: 10px;
+    font-size: 85px;
+    box-shadow: 4px 0 20px -10px rgb(0 0 0 / 20%);
+}
+.boxes .box .content-wrapper {
+    padding: 50px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.boxes .box .content-wrapper h3 {
+    font-weight: 100;
+    font-size: 26px;
+    margin-top: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.boxes .box .content-wrapper p {
+    flex-grow: 1;
+    font-size: 19px;
+    line-height: 24px;
+    margin-top: 0;
+}
+.boxes .box .content-wrapper a {
+    font-weight: 800;
+    color: #000;
+    font-size: 19px;
+    transition: color 0.5s;
+    text-decoration: none;
+}
+.boxes .box .content-wrapper a:hover {
+    color: #888;
+}
+
