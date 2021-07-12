@@ -285,8 +285,8 @@
                 img.addEventListener("click",function(){
                     $("#main").animate({ opacity: 0 }, 500, function(){
                         $("#main").attr(`src`, `image/kuchnia/${i+1}.jpg`);
+                        $("#main").animate({ opacity: 1}, 500);
                     });
-                    $("#main").animate({ opacity: 1}, 500);
                     window.scrollTo(0, 0); 
                 })
             }
