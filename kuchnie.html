@@ -311,7 +311,7 @@
                         var clicked_image = `image/kuchnia/${i+1}.jpg`;
                         if ($("#main").attr('src') !== clicked_image) {
                             $("#main").fadeOut(600, function () {
-                                $("#main").attr('src', clicked_image);
+                                $("#main").delay(-150).attr('src', clicked_image);
                             }).fadeIn(600);
                         }
                     });
