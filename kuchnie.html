@@ -311,15 +311,10 @@
                         var clicked_image = `image/kuchnia/${i+1}.jpg`;
                         if ($("#main").attr('src') !== clicked_image) {
                             $("#main").fadeOut(600, function () {
-                                $("#main").delay(-150).attr('src', clicked_image);
+                                $("#main").attr('src', clicked_image);
                             }).fadeIn(600);
                         }
                     });
-
-                    //$("#main").fadeToggle(1000, function(){
-                    //    $("#main").attr(`src`, `image/kuchnia/${i+1}.jpg`);
-                    //});
-                    //$("#main").fadeToggle(1000)
                 })
             }
 
