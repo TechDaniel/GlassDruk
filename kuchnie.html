@@ -302,7 +302,7 @@
             var main = document.getElementById("main")
             var counter=0;
 
-            for(let i=0;i<imgs.length;i++){
+            /*for(let i=0;i<imgs.length;i++){
                 let img=imgs[i]
                 img.addEventListener("click",function(){
                     $('html').scrollTop(0);
@@ -316,8 +316,18 @@
                         }
                     });
                 })
+            }*/
+            for(let i=0;i<imgs.length;i++){
+                let img=imgs[i]
+                $(img).on('click', function () {
+                    var clicked_image = `image/kuchnia/${i+1}.jpg`;
+                    if ($("#main").attr('src') !== clicked_image) {
+                        $("#main").fadeOut(600, function () {
+                            $("#main").attr('src', clicked_image);
+                        }).fadeIn(600);
+                    }
+                });
             }
-
             $(document).ready(function(){
                 let img = $("#img1")
                 let i = 1;
